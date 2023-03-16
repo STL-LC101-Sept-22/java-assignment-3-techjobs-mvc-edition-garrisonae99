@@ -72,10 +72,11 @@ public class JobData {
             String aValue = getFieldValue(job, column);
 
             if (aValue != null && aValue.toLowerCase().contains(value.toLowerCase())) {
+                System.out.println(job);
                 jobs.add(job);
             }
         }
-
+        System.out.println(jobs);
         return jobs;
     }
 
